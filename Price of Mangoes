@@ -9,4 +9,7 @@ mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 
 my answer
 def mango(quantity, price):
-    return int(quantity * 2/3 * price)
+    free_mango = quantity // 3
+    my_mango = quantity - free_mango
+    total_cost = my_mango * price
+    return total_cost
