@@ -9,10 +9,10 @@ damage	5
 experience	0
 
 my answer
-class Hero():
-    def __init__(self):
-        self.name = 'Hero'
+class Hero(object):
+    def __init__(self, name = 'Hero'):
+        self.name = name
         self.position = '00'
         self. health = 100
         self.damage = 5
-        self.experience = 0   
+        self.experience = 0 
